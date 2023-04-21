@@ -6,7 +6,6 @@ class Boostrap03 extends Component {
         index: 0
     }
     
-
     changeView = (e) => {
         e.preventDefault()
         const btnClass = e.target.className;
@@ -15,12 +14,7 @@ class Boostrap03 extends Component {
 
         let activeIndex = this.state.index
 
-        console.log("length ", carouselItems.length)
-
         if (btnClass === 'carousel-control-prev-icon') {
-            console.log("entro a prev")
-            console.log("activeIndex", activeIndex)
-            console.log("carouselItems length", carouselItems.length - 1)
             carouselItems[activeIndex].classList.remove('active')
             activeIndex = (activeIndex === 0 ) ? carouselItems.length - 1 : activeIndex - 1;
             carouselItems[activeIndex].classList.add('active')
@@ -28,9 +22,6 @@ class Boostrap03 extends Component {
         }
         
         if (btnClass === 'carousel-control-next-icon') {
-            console.log("entro a next")
-            console.log("activeIndex", activeIndex)
-            console.log("carouselItems length", carouselItems.length - 1)
             carouselItems[activeIndex].classList.remove('active')
             activeIndex = (activeIndex === carouselItems.length - 1 ) ? 0 : activeIndex + 1;
             carouselItems[activeIndex].classList.add('active')
@@ -59,12 +50,10 @@ class Boostrap03 extends Component {
                         <div className="carousel-item active">
                             <h5>Titulo 01</h5>
                             <img src="https://thumbs.dreamstime.com/b/paisajes-de-yosemite-46208063.jpg" className="d-block w-70" alt="imagen-01" height={600}/>
-                            
                         </div>
                         <div className="carousel-item">
                             <h5>Titulo 02</h5>
-                            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" className="d-block w-70" alt="imagen-02" height={600}/>
-                            
+                            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" className="d-block w-70" alt="imagen-02" height={600}/> 
                         </div>
                         <div className="carousel-item">
                             <h5>Titulo 03</h5>
@@ -80,7 +69,6 @@ class Boostrap03 extends Component {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
             </div>           
         )
     }

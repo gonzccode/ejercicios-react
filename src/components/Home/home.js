@@ -27,12 +27,12 @@ class Home extends Component {
                     <Alert.Link href="/prueba-bootstrap-03">Haga click</Alert.Link>
                 </Alert>
                 <Alert variant='danger'>
-                    Prueba React <br/>
-                    <Alert.Link href="/prueba-react">Haga click</Alert.Link>
+                    Ejercicio algoritmo 01 <br/>
+                    <Alert.Link href="/prueba-algoritmo-01">Haga click</Alert.Link>
                 </Alert>
-                    <Alert variant='danger'>
-                        Prueba React <br/>
-                    <Alert.Link href="/prueba-react">Haga click</Alert.Link>
+                <Alert variant='danger'>
+                    Ejercicio algoritmo 02 <br/>
+                    <Alert.Link href="/prueba-algoritmo-02">Haga click</Alert.Link>
                 </Alert>
             </div>
         )

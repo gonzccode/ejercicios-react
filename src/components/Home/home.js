@@ -34,6 +34,10 @@ class Home extends Component {
                     Ejercicio algoritmo 02 <br/>
                     <Alert.Link href="/prueba-algoritmo-02">Haga click</Alert.Link>
                 </Alert>
+                <br/>
+                <p>
+                    <strong>Desarrollado por Gonzalo Canaza Cupe</strong>
+                </p>
             </div>
         )
     }
